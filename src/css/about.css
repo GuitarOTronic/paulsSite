@@ -1,0 +1,47 @@
+.aboutContent{
+  margin: 1rem;
+  color:#2d3e50;
+  max-width: 700px;
+}
+
+.aboutContainer{
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  margin: 1rem;
+  text-align:center;
+}
+
+
+
+.practingContainer{
+  display: flex;
+  justify-content: center;
+}
+
+.practing{
+  width: 320px;
+  min-height: 300px;
+  background-image: url('../pics/practicing.jpg');
+  background-position: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+@media (min-width:1024px){
+  .aboutContainer{
+    flex-direction: row-reverse;
+  }
+  /* .aboutContent{
+    max-width:
+  } */
+
+  .practing{
+    /* width: 640px; */
+    width: 55vw;
+    min-height: 100%;
+    /* position: fixed; */
+  }
+}

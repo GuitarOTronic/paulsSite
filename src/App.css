@@ -11,6 +11,14 @@
   font-size: large;
 }
 
+button:hover {
+  cursor: pointer;
+}
+
+.centerDiv{
+  display: flex;
+  justify-content:  center;
+}
 /* @media (min-width:320px)  {
   .home-header {
     color:purple;

@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 
-import About from './components/about.js'
+import About from './components//about/about.js'
 import Banner from './components/banner.js'
-import Home from './components/home.js'
-import Music from './components/music.js'
+import Home from './components/home/home.js'
+import Music from './components/music/music.js'
 import './App.css';
 
 class App extends Component {

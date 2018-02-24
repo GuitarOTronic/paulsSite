@@ -1,13 +1,25 @@
-.hamMenuContainer li {
-  list-style: none;
-  padding: 1rem 0;
-  text-align: center;
+a {
+  text-decoration: none;
+  color:#fff;
+  }
 
+a:active{
+  color: red;
 }
 
 .bannerMenu {
   display:flex;
   flex-direction: row;
+}
+
+.hamMenuContainer{
+  background-color: grey;
+}
+
+.hamMenuContainer li {
+  list-style: none;
+  padding: 1rem 0;
+  text-align: center;
 }
 
 li:hover {
@@ -17,6 +29,7 @@ li:hover {
 .hamMenuContainer ul{
   display: flex;
   flex-direction: column;
+  margin-top: 0;
 }
 .hamburger{
   height: 3rem;
