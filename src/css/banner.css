@@ -1,20 +1,96 @@
-.banner li {
+.hamMenuContainer li {
   list-style: none;
   padding: 1rem 0;
   text-align: center;
 
 }
 
+.bannerMenu {
+  display:flex;
+  flex-direction: row;
+}
+
 li:hover {
   cursor: pointer;
 }
 
-.banner ul{
+.hamMenuContainer ul{
   display: flex;
   flex-direction: column;
 }
+.hamburger{
+  height: 3rem;
+  align-self: center;
+}
 
- hr{
+.hamburgerContainer{
+  display: flex;
+
+}
+
+.home-header {
+  background-color: grey;
+  height: 90px;
+  padding: 20px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+hr {
    width: 70%;
   color: black;
 }
+
+@media (min-width:320px)  {
+  .bannerMenu{
+    display: none;
+  }
+  .phoneTitle{
+    display: block;
+  }
+  .tabletTitle{
+    display: none;
+  }
+}
+@media (min-width:768px)  {
+  .hamburger {
+    display: none;
+  }
+  .bannerMenu{
+    display: flex;
+    justify-content: center;
+
+  }
+  .bannerMenu ul{
+    display: flex;
+
+
+  }
+  .bannerMenu a{
+    list-style: none;
+    justify-content: space-between;
+    padding: 0 2rem;
+  }
+  hr {
+     height: 1rem%;
+    color: black;
+  }
+  .home-header{
+    justify-content: center;
+    flex-direction: column;
+  }
+  .phoneTitle{
+    display: none;
+  }
+  .tabletTitle{
+    display: flex;
+    justify-content: center;
+  }
+}
+/* @media (min-width:320px)  { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+/* @media (min-width:480px)  { /* smartphones, Android phones, landscape iPhone */
+/* @media (min-width:600px)  { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+/* @media (min-width:801px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */
+/* @media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */
+/* @media (min-width:1281px) { /* hi-res laptops and desktops   */

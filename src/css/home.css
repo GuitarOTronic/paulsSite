@@ -1,4 +1,85 @@
 .homeContainer {
-  display: flex;
+  display: block;
   justify-content: center;
+  padding:1rem;
+}
+
+.becomeStudentBtnContainer{
+  display: block;
+
+
+}
+
+.becomeStudentBtn{
+  height: 44px;
+  background-color: tomato;
+
+}
+
+.dateName{
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+  /* align-items: baseline; */
+  /* padding:0 0 0 1rem; */
+}
+
+.testamonial{
+  border: 1px solid #2d2d2d;
+  color:#2d3e50;
+}
+
+.testamonialName{
+  margin: 0;
+  text-align: right;
+}
+.testamonialDate{
+  margin: 0;
+  text-align: right;
+  margin-bottom: .5rem;
+}
+
+.testamonialContainer{
+  display: flex;
+  flex-direction: column;
+}
+
+@media  (min-width:320px) {
+  .becomeStudentBtn{
+    width: 100%;
+  }
+  .testamonial{
+    margin: .3rem 0;
+    padding:0 .5rem;
+  }
+  .testamonial p{
+    line-height: 1.2rem;
+  }
+  .testamonial h2{
+    margin: .5rem 0 ;
+  }
+  .testamonialName{
+    margin: 0;
+    text-align: right;
+  }
+  .testamonialDate{
+    margin: 0;
+    text-align: right;
+    margin-bottom: .5rem;
+  }
+}
+@media  (min-width:768px) {
+  .becomeStudentBtn{
+    width: 9rem;
+    flex-wrap: nowrap;
+  }
+  .testamonial{
+    width: 20rem;
+    /* height: 20rem; */
+  }
+  .testamonialContainer{
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
