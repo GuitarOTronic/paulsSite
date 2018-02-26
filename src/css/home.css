@@ -1,13 +1,17 @@
 .homeContainer {
   display: block;
   justify-content: center;
-  padding:1rem;
-}
-
-.becomeStudentBtnContainer{
-  display: block;
-
-
+  /* padding:1rem; */
+  /* background-color: rgba(200, 200, 200, 0.4);
+  background-image: url('../pics/kidsGroup.JPG'); */
+  /* background:
+  linear-gradient(
+    rgba(105, 105, 105, 0.95),
+    rgba(255, 255, 255, 0.45)
+  ),
+  url('../pics/kidsGroup.JPG'); */
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .becomeStudentBtn{
@@ -18,6 +22,9 @@
   margin-bottom: 1rem;
 }
 
+.becomeStudentBtnContainer a{
+  color: #2d2d2d;
+}
 
 
 .dateName{
@@ -28,64 +35,193 @@
   /* padding:0 0 0 1rem; */
 }
 
-.testamonial{
+.dividerLine{
+  width: 100%;
+}
+
+.divider{
+  height: 19rem;
+  background-color: grey;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.downArrow{
+  height: 1.5rem;
+  align-self: center;
+}
+
+.elevatorPitch{
+  line-height: 1.7rem;
+  color:#2d3e50;
+}
+
+.elevatorPitch h3{
+  text-align: center;
+  text-shadow: 0 2px white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #b8bec5;
+
+}
+
+.homeTitle{
+  display: flex;
+  flex-direction: row;
+  height: 110px;
+  color:#2d3e50;
+}
+
+.showTestamondials{
+  display: none;
+}
+
+.testimonial{
   border: 1px solid #2d2d2d;
   color:#2d3e50;
 }
 
-.testamonialName{
+.testimonialName{
   margin: 0;
   text-align: right;
 }
-.testamonialDate{
+.testimonialDate{
   margin: 0;
   text-align: right;
   margin-bottom: .5rem;
 }
 
-.testamonialContainer{
+.headShot{
+  width: 100px;
+  height: 110px;
+  border-radius: 50%;
+
+}
+
+.testimonialContainer{
   display: flex;
   flex-direction: column;
+  padding: 1rem;
 }
 
 @media  (min-width:320px) {
   .becomeStudentBtn{
     width: 100%;
   }
-  .testamonial{
+  .becomeStudentBtnContainer{
+    display: block;
+    height: 100vh;
+    padding: 1rem;
+  }
+  .learnMoreLinks{
+    display: flex;
+    padding-top: 1rem;
+    justify-content: space-around;
+  }
+  .learnMoreLinks a {
+    text-decoration: underline;
+    margin-bottom: 2rem;
+  }
+  .goToTestamonials{
+    margin-top: 15px;
+    height:40px;
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+  }
+  .testimonial{
     margin: .3rem 0;
     padding:0 .5rem;
   }
-  .testamonial p{
-    line-height: 1.2rem;
-  }
-  .testamonial h2{
-    margin: .5rem 0 ;
-  }
-  .testamonialName{
+
+  .testimonialName{
     margin: 0;
     text-align: right;
   }
-  .testamonialDate{
+  .testimonialDate{
     margin: 0;
     text-align: right;
     margin-bottom: .5rem;
+  }
+
+  .testimonialPic{
+    height: 15rem;
+    min-width: 90%;
+    background-image:url(../pics/kidsGroup.JPG);
+    /* background-color: grey; */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 1rem;
+  }
+  .testimonialPic h2{
+    display: none;
+  }
+  .homeContainer .centerDiv h2 {
+    text-decoration: underline;
+    color:#2d3e50;
   }
 }
 @media  (min-width:768px) {
   .becomeStudentBtnContainer{
     display: flex;
+    flex-direction: column;
+    padding-top: 5rem;
+
+    text-align: center;
+    align-items: center;
+    align-self: center;
+    max-width: 1080px;
+    height: 100vh;
+  }
+  .buttonsContainer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .testimonialPic{
+    background-position: left;
+    margin-left: 10%;
+    flex-direction: row-reverse;
+    display: flex;
+  }
+  .testimonialPic h2{
+    display: flex;
+    justify-content: flex-end;
+    padding: 2rem;
+    padding-right: 10%;
+    max-width: 250px;
+    font-size: 2rem;
+    /* align-self: flex-end; */
+  }
+
+  .homeContainer{
+    display: flex;
+    flex-direction: column;
     justify-content: center;
   }
   .becomeStudentBtn{
-    width: 14rem;
+    width: 24rem;
     flex-wrap: nowrap;
+    align-self: center;
   }
-  .testamonial{
+  .goToTestamonials{
+    display: none;
+  }
+  .learnMoreLinks{
+    width:24rem;
+    align-self: center;
+  }
+  .showTestamondials{
+    display: flex;
+  }
+  .testimonial{
     width: 20rem;
     /* height: 20rem; */
   }
-  .testamonialContainer{
+  .testimonialContainer{
     justify-content: space-around;
     flex-direction: row;
     flex-wrap: wrap;
