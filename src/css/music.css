@@ -1,0 +1,16 @@
+.musicContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 6rem;
+  padding-bottom: 10rem;
+}
+
+.song{
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding: 1rem;
+  align-self: center;
+  /* width: 50px; */
+}

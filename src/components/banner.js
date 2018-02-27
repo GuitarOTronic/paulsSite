@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 import bars from '../pics/bars.png'
 import times from '../pics/times.png'
 import '../css/banner.css'
+
 class Banner extends Component{
   constructor(props){
     super(props)
@@ -29,7 +30,7 @@ class Banner extends Component{
   render(){
 
     return(
-      <div className='banner'>
+      <div className='banner' id='home'>
         <header className="home-header">
 
           <h1 className="phoneTitle"> Paul Witkamp <br></br> Guitar Lessons</h1>
@@ -41,7 +42,9 @@ class Banner extends Component{
             <ul>
               <Link to ='/' ><li> Home </li></Link>
               <hr></hr>
-              <Link to='about'><li> About Paul</li></Link>
+              <Link to='about'><li> About </li></Link>
+              <hr></hr>
+              <Link to='policies'><li> Policies </li></Link>
               <hr></hr>
               <Link to='music'><li> Music </li></Link>
             </ul>
@@ -53,6 +56,8 @@ class Banner extends Component{
               <Link to ='/' onClick={ this.toggleMenu }><li> Home </li></Link>
               <hr></hr>
               <Link to='about' onClick={ this.toggleMenu }><li> About </li></Link>
+              <hr></hr>
+              <Link to='policies' onClick={ this.toggleMenu }><li> Policies </li></Link>
               <hr></hr>
               <Link to='music' onClick={ this.toggleMenu }><li> Music </li></Link>
               <hr></hr>

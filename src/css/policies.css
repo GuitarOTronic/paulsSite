@@ -1,0 +1,12 @@
+.policiesContainer{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.policyContent{
+  display: flex;
+  justify-content: center;
+
+  max-width: 15rem;
+}

@@ -1,11 +1,11 @@
 import React from 'react'
 
-const Testimonial=({name, title, date, testimonial}) => {
-
+const Testimonial=({name, title, date, testimonial, hasGreyBackground}) => {
+console.log(hasGreyBackground%2);
   return(
-    <div className='testimonial'>
+    <div className={hasGreyBackground%2 ? 'testimonial ': 'testimonial testimonialGreyBackground'}>
       <h2>{ title }</h2>
-      <p>{ testimonial}</p>
+      <p>{ testimonial }</p>
       <div className='dateName'>
         <h4 className='testimonialName'> - { name }</h4>
         <h5 className='testimonialDate'>{ date }</h5>
