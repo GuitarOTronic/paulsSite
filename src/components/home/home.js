@@ -106,7 +106,7 @@ class Home extends Component{
           </div>
         </div>
 
-        <div className='centerDiv'>
+        <div className='centerDiv block'>
           <h2>Testimonials</h2>
         </div>
         <div className='testimonialContainer'>

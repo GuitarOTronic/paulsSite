@@ -71,7 +71,7 @@
 .divider{
   height: 19rem;
   background-color: rgba(192,192,192,0.3);
-  display: flex;
+  display: block;
   justify-content: space-between;
   align-items: center;
 }
@@ -168,7 +168,7 @@ footer a{
   justify-content: space-between;
   text-align: center;
   padding:1rem;
-  width: 100%;
+  /* width: 100%; */
 }
 .upArrow{
   position: fixed;
@@ -230,7 +230,7 @@ footer a{
   .testimonialPic{
     /* height: 18rem; */
     height: 18em;
-    padding: 1rem;
+    align-self: center;
     border-radius: 166px;
   }
   .testimonialPicContainer{

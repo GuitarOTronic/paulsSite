@@ -19,7 +19,9 @@ button:hover {
   display: flex;
   justify-content:  center;
 }
-
+.block{
+  display: block;
+}
 .mainContainer{
   background-image: url('./pics/bgPattern.png');
   background-size: cover;
