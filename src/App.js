@@ -6,7 +6,9 @@ import Home from './components/home/home.js'
 import Music from './components/music/music.js'
 import Policies from './components/policies/policies.js'
 import './App.css';
+import axios from 'axios'
 
+const host = process.env.REACT_APP_HOST
 class App extends Component {
   constructor(props){
     super(props)
@@ -18,6 +20,13 @@ class App extends Component {
 
   showMenu = () => {
     this.setState({isOpened:!this.state.isOpened})
+  }
+
+  submitBecomeStudentForm = async (formInfo) => {
+    await axios.post(`http://localhost:2999/newStudent`, formInfo).then(response => {
+      console.log(response);
+    })
+
   }
 
   toggleModal = () => {
@@ -33,9 +42,13 @@ class App extends Component {
             showMenu={ this.showMenu }
           />
         <Route exact path='/'
-          component={ Home }
-          modalIsOpen={ this.state.modalIsOpen }
-          toggleModal={ this.toggleModal }
+          render = {(props) =>
+            <Home
+              modalIsOpen={ this.state.modalIsOpen }
+              toggleModal={ this.toggleModal }
+              submitBecomeStudentForm={this.submitBecomeStudentForm}
+            />
+          }
         />
         <Route path='/about'
           component={ About }

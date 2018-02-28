@@ -9,6 +9,7 @@ import kidsPic from '../../pics/kidsGroup.JPG'
 import Modal from 'react-modal'
 import upArrow from '../../pics/arrow-up.png'
 
+
 class Home extends Component{
   constructor(props){
     super(props)
@@ -18,8 +19,19 @@ class Home extends Component{
     Modal.setAppElement(document.body)
   }
 
+  submitBecomeStudentForm = (event) => {
+    let name = event.target.querySelectorAll('#name')[0].value
+    let email = event.target.querySelectorAll('#email')[0].value
+    let phone = event.target.querySelectorAll('#phone')[0].value
+    let message = event.target.querySelectorAll('#message')[0].value
+    let formInfo = { name, email, phone, message }
+    event.preventDefault()
+    this.props.submitBecomeStudentForm(formInfo)
+    this.toggleModal()
+  }
+
+
   toggleModal =()=>{
-    console.log(this.props);
     this.setState({modalIsOpen:!this.state.modalIsOpen})
   }
 
@@ -36,17 +48,33 @@ class Home extends Component{
           onRequestClose={ this.toggleModal }
           className='becomeStudentForm'
         >
+          <div className='becomeStudentFormContainer'>
+            <div className='becomeStudentFormBanner'>
+                <h2 >Paul Witkamp<br></br> Gutar Lessons</h2>
+            </div>
 
-          <h2 >Hello</h2>
-          <button>close</button>
-          <div>I am a modal</div>
-          <form>
-            <input />
-            <button>tab navigation</button>
-            <button>stays</button>
-            <button>inside</button>
-            <button>the modal</button>
-          </form>
+            <p>Contact Paul and start learning! </p>
+            <form onSubmit={this.submitBecomeStudentForm}>
+              <label htmlFor='name'>Name:{" "}
+                <input id='name' type='text'/>
+              </label>
+              <label htmlFor='email'>Email:{" "}
+                <input id='email' type='email'/>
+              </label>
+              <label htmlFor='phone'>Phone:{" "}
+                <input id='phone' type='phone'/>
+              </label>
+              <label htmlFor='message'>Message:{" "}<br></br>
+                <textarea id='message' type='textarea' rows="10" cols="30" placeholder='Any questions for Paul? Whats your favorite type of music? '/>
+              </label>
+              <div className='formBtnContainer'>
+                <button type='submit' className='formBtnSubmit'>Submit</button>
+                <button onClick={this.toggleModal} className='formBtnCancel'>Cancel</button>
+              </div>
+
+            </form>
+          </div>
+
         </Modal>
         <div className='becomeStudentBtnContainer' >
           <div className='homeTitle'>

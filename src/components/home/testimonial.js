@@ -1,7 +1,6 @@
 import React from 'react'
 
 const Testimonial=({name, title, date, testimonial, hasGreyBackground}) => {
-console.log(hasGreyBackground%2);
   return(
     <div className={hasGreyBackground%2 ? 'testimonial ': 'testimonial testimonialGreyBackground'}>
       <h2>{ title }</h2>

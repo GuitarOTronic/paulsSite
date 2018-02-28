@@ -13,17 +13,45 @@
   margin-bottom: 1rem;
 }
 
+.becomeStudentFormBanner {
+  background-color: tomato;
+  height: 100px;
+  width: 100%;
+  color:#fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.becomeStudentFormContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color:black;
+}
+
+.becomeStudentFormContainer form{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+.becomeStudentFormContainer label{
+  padding:1rem;
+}
+
+
 .becomeStudentForm{
   color:tomato;
   background-color: #fff;
-  height: 60vh;
+  height: 80vh;
   max-width: 80vw;
-  padding:2rem;
+  /* padding:2rem; */
   margin:2rem auto;
 }
 
 .becomeStudentBtnContainer a{
-  /* color: #2d2d2d; */
   color: #fff;
 }
 
@@ -69,6 +97,19 @@
 footer a{
   display: flex;
   justify-content: center;
+}
+.formBtnSubmit{
+  background-color: tomato;
+  height: 44px;
+}
+
+.formBtnCancel{
+  background-color:orange;
+  height: 44px;
+}
+
+.formBtnContainer{
+  display: flex;
 }
 
 .homeTitle{
@@ -145,6 +186,16 @@ footer a{
     display: block;
     height: 100vh;
     padding: 1rem;
+  }
+  .formBtnContainer{
+    flex-direction: column;
+    width:100%;
+  }
+  .formBtnCancel{
+
+  }
+  .formBtnSubmit{
+    height:
   }
   .learnMoreLinks{
     display: flex;
