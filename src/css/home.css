@@ -228,7 +228,8 @@ footer a{
   }
 
   .testimonialPic{
-    height: 18rem;
+    /* height: 18rem; */
+    height: 18em;
     padding: 1rem;
     border-radius: 166px;
   }
