@@ -14,7 +14,10 @@
 button:hover {
   cursor: pointer;
 }
+.centerText{
+  margin: 0 auto;
 
+}
 .centerDiv{
   display: flex;
   justify-content:  center;

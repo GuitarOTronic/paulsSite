@@ -74,8 +74,8 @@ class Home extends Component{
 
             </form>
           </div>
-
         </Modal>
+
         <div className='becomeStudentBtnContainer' >
           <div className='homeTitle'>
             <img  src={require('../../pics/PaulHeadshotCropped.jpg') } alt='Pauls headshot' className='headShot'></img>
@@ -99,6 +99,7 @@ class Home extends Component{
             <img src={ downArrow } alt='down arrow' className='downArrow'></img>
           </div></a>
         </div>
+
         <div className='divider'>
           <div id='testimonials' className='testimonialPicContainer'>
             <img src={ kidsPic } alt='Guitar class' className='testimonialPic'></img>
@@ -106,7 +107,7 @@ class Home extends Component{
           </div>
         </div>
 
-        <div className='centerDiv block'>
+        <div className='centerDiv centerText'>
           <h2>Testimonials</h2>
         </div>
         <div className='testimonialContainer'>
