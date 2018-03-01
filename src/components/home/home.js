@@ -53,10 +53,11 @@ class Home extends Component{
         >
           <div className='becomeStudentFormContainer'>
             <div className='becomeStudentFormBanner'>
-                <h2 >Paul Witkamp<br></br> Gutar Lessons</h2>
+                <h2 >Paul Witkamp<br></br> Guitar Lessons</h2>
             </div>
-
-            <p>Contact Paul and start learning! </p>
+            <div className='centerDiv'>
+              <p>Contact Paul and start learning! </p>
+            </div>
             <form onSubmit={this.submitBecomeStudentForm}>
               <label htmlFor='name'>Name:{" "}
                 <input id='name' type='text'/>

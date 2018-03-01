@@ -10,6 +10,7 @@
 .aboutContainer{
   display: flex;
   flex-direction: column;
+  line-height: 1.3rem;
 }
 
 h1 {
