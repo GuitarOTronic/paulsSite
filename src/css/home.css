@@ -41,6 +41,10 @@
   padding:1rem;
 }
 
+.becomeStudentFormContainer p{
+  padding-top: 1rem;
+}
+
 
 .becomeStudentForm{
   color:tomato;
