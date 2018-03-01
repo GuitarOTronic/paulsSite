@@ -17,6 +17,7 @@ class Home extends Component{
       modalIsOpen:false,
     }
     Modal.setAppElement(document.body)
+
   }
 
   submitBecomeStudentForm = (event) => {
@@ -39,7 +40,9 @@ class Home extends Component{
 
   }
 
+
   render(){
+
     return(
       <div className='homeContainer'>
         <Modal
@@ -95,9 +98,9 @@ class Home extends Component{
             </div>
 
           </div>
-          <a href='#testimonials'><div className='goToTestamonials'>
+          {/* <a href='#testimonials'><div className='goToTestamonials'>
             <img src={ downArrow } alt='down arrow' className='downArrow'></img>
-          </div></a>
+          </div></a> */}
         </div>
 
         <div className='divider'>

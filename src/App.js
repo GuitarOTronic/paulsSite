@@ -35,7 +35,7 @@ class App extends Component {
 
   render() {
     return (
-    <Router>
+    <Router onUpdate={() => window.scrollTo(0, 0)} >
       <div className='mainContainer'>
         <Banner
             isOpened={ this.state.isOpened}
