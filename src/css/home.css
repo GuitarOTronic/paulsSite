@@ -184,7 +184,7 @@ footer a{
   }
   .becomeStudentBtnContainer{
     display: block;
-    height: 100vh;
+    min-height: 100vh;
     min-height: 521px;
     padding: 1rem;
   }
