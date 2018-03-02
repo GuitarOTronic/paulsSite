@@ -51,9 +51,9 @@
   color:tomato;
   background-color: #fff;
 
-  max-width: 80vw;
+  /* max-width: 80vw; */
   /* padding:2rem; */
-  margin:2rem auto;
+  /* margin:2rem auto; */
 }
 
 .becomeStudentBtnContainer a{

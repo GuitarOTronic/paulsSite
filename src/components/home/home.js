@@ -50,7 +50,10 @@ class Home extends Component{
           contentLabel="Sign up to be a student"
           onRequestClose={ this.toggleModal }
           className='becomeStudentForm'
-          overflow= 'scroll'
+          style={{
+            overflow: 'scroll',
+            height:'500px'
+          }}
         >
           <div className='becomeStudentFormContainer'>
             <div className='becomeStudentFormBanner'>
