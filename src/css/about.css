@@ -39,9 +39,9 @@ h1 {
   .aboutContainer{
     flex-direction: row-reverse;
   }
-  /* .aboutContent{
-    max-width:
-  } */
+  .aboutContent{
+    margin-top: 0;
+  }
 
   .practing{
     /* width: 640px; */
