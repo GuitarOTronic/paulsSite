@@ -1,13 +1,26 @@
 import React, { Component } from 'react'
 import '../../css/policies.css'
+
+
+
 class Policies extends Component {
 
+
+  componentDidMount() {
+    window.scrollTo(0,0);
+  }
   render(){
     return(
       <div className='policiesContainer'>
         <h1>Policies</h1>
         <div className='policyContent'>
-          <p>
+          <a href='file://pauls_site/public/policies.pdf' download>Download</a>
+          {/* <a href='https://drive.google.com/open?id=131lNq7hB84C8hv_OV6rgPNN-cVIruQAZ' download>Download</a> */}
+
+          {/* <embed src='https://drive.google.com/open?id=131lNq7hB84C8hv_OV6rgPNN-cVIruQAZ' width="500" height="375" ></embed> */}
+          {/* <embed width="100%" height="100%" src="../../assets/policies.pdf" type="application/pdf"></embed> */}
+          {/* <embed type="application/pdf" width="100%" height="100%" src="../../assets/policies.pdf" /> */}
+          {/* <p>
             In an effort to keep payments timely, encourage lesson regularity, and avoid complicated reschedules all students are required to agree to and sign the Payment Policy, Cancellation Policy, and Lesson Credit System.
 
             Monthly Payment Policy
@@ -27,7 +40,7 @@ class Policies extends Component {
             Cancellation by teacher: If I cancel a lesson on the scheduled day, for any reason, a reschedule will be attempted. If we cannot agree upon a date/time, the lesson will be credited to the next month.
 
 
-            </p>
+            </p> */}
         </div>
 
       </div>

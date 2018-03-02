@@ -92,7 +92,7 @@ class Home extends Component{
           <div className='buttonsContainer'>
             <button className='becomeStudentBtn' onClick={ this.toggleModal }> Become a Student! </button>
             <div className='learnMoreLinks'>
-              <a href='#testimonials'>Pricing & Policies</a>
+              <Link to='policies'>Pricing & Policies</Link>
               <Link to='about'>About Paul </Link>
               <a href='#testimonials' className='showTestamondials'>Testamonials</a>
               {/* <Link to='about'>About Paul </Link> */}

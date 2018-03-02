@@ -33,8 +33,8 @@ class Banner extends Component{
       <div className='banner' id='home'>
         <header className="home-header">
 
-          <h1 className="phoneTitle"> Paul Witkamp <br></br> Guitar Lessons</h1>
-          <h1 className="App-title tabletTitle"> Paul Witkamp <br></br> Guitar Lessons</h1>
+          <Link to='/' ><h1 className="phoneTitle"> Paul Witkamp <br></br> Guitar Lessons</h1></Link>
+          <Link to='/' ><h1 className="App-title tabletTitle"> Paul Witkamp <br></br> Guitar Lessons</h1></Link>
           <div className='hamburgerContainer' onClick={ this.toggleMenu }>
             {this.state.isOpened ? <img alt='times' src={times} className='hamburger'/> :  <img alt='bars' src={bars} className='hamburger'/> }
           </div>
