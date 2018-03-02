@@ -50,26 +50,6 @@ class Home extends Component{
           contentLabel="Sign up to be a student"
           onRequestClose={ this.toggleModal }
           className='modalStyling'
-          style={{
-            // top: '5px',
-            // left: '5px',
-            //
-            // // transform: 'translate(-50%, -50%)',
-            // height: '500px',
-            // overflow: 'scroll'
-
-            // position: 'absolute',
-            // top: '4px',
-            // left: '4px',
-            // right: '4px',
-            // bottom: '4px',
-            // border: '1px solid rgb(204, 204, 204)',
-            // background: 'rgb(255, 255, 255)',
-            // overflow: 'auto',
-            // 'border-radius': '4px',
-            // outline: 'none',
-
-          }}
         >
           <div className='becomeStudentFormContainer'>
             <div className='becomeStudentFormBanner'>
