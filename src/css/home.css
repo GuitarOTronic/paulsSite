@@ -1,15 +1,10 @@
-.homeContainer {
-  display: block;
-  justify-content: center;
 
-
-}
 
 .becomeStudentBtn{
   height: 44px;
   background-color: tomato;
   color: #fff;
-  font-size: 1rem;
+  font-size: 1.5rem;
   margin-bottom: 1rem;
 }
 
@@ -82,15 +77,16 @@
 
 .elevatorPitch{
   line-height: 1.7rem;
-  color: #fff;
+  color:#fff;
 }
 
 .elevatorPitch h3{
   text-align: center;
-  padding-top: 1rem;
+  padding-top: 1.9rem;
   font-size: 1.5rem;
+  text-shadow: black 1px 1px;
   font-weight: bold;
-  color: #fff;
+  color: tomato;
 }
 
 footer a{
@@ -109,6 +105,11 @@ footer a{
 
 .formBtnContainer{
   display: flex;
+}
+
+.homeContainer {
+  display: block;
+  justify-content: center;
 }
 
 .homeTitle{
@@ -183,7 +184,9 @@ footer a{
   justify-content: space-between;
   text-align: center;
   padding:1rem;
-  /* width: 100%; */
+}
+.testimonialPicContainer h2{
+  color:tomato;
 }
 .upArrow{
   position: fixed;
@@ -337,7 +340,7 @@ footer a{
     justify-content: flex-end;
     padding: 2rem;
     padding-right: 10%;
-    color:#fff;
+    text-shadow: black 1px 1px;
     font-size: 2rem;
     min-width: 250px
   }
