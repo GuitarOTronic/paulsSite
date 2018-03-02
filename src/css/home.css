@@ -48,12 +48,8 @@
 
 
 .becomeStudentForm{
-  color:tomato;
+  /* color:tomato; */
   background-color: #fff;
-
-  /* max-width: 80vw; */
-  /* padding:2rem; */
-  /* margin:2rem auto; */
 }
 
 .becomeStudentBtnContainer a{
@@ -282,7 +278,7 @@ footer a{
     flex-direction: column;
   }
   .becomeStudentForm{
-    max-width: 50vw;
+    /* max-width: 50vw; */
   }
   .testimonialPic{
     background-position: left;
