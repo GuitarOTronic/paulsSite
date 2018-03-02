@@ -129,7 +129,7 @@ class Home extends Component{
 
 
         <footer>
-          <a href="#home"><img src={ upArrow } alt='down arrow' className='upArrow ' ></img></a>
+          {/* <a href="#home"><img src={ upArrow } alt='down arrow' className='upArrow ' ></img></a> */}
       </footer>
       </div>
     )

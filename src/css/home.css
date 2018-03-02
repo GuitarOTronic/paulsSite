@@ -219,7 +219,7 @@ footer a{
     width:100%;
   }
   .formBtnContainer button{
-    margin: 1rem 0;
+    margin: .5rem 0;
     color:#fff;
     font-size: 1.4rem;
     padding:.5rem;
@@ -293,7 +293,39 @@ footer a{
   .becomeStudentForm{
     /* max-width: 50vw; */
   }
-
+  .becomeStudentBtn{
+    width: 24rem;
+    flex-wrap: nowrap;
+    align-self: center;
+  }
+  .formBtnSubmit:hover{
+    background-color: green;
+  }
+  .formBtnCancel:hover{
+    background-color:red;
+  }
+  .goToTestamonials{
+    display: none;
+  }
+  .homeContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .learnMoreLinks{
+    width:24rem;
+    align-self: center;
+  }
+  .modalStyling{
+    bottom: 40px;
+    max-width: 50vw;
+    margin: 0 auto;
+    margin-top:3rem;
+    max-height: 80vh
+  }
+  .showTestamondials{
+    display: flex;
+  }
   .testimonialPic{
     background-position: left;
     /* flex-direction: row-reverse; */
@@ -308,39 +340,6 @@ footer a{
     color:#fff;
     font-size: 2rem;
     min-width: 250px
-    /* align-self: flex-end; */
-  }
-
-  .homeContainer{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  .becomeStudentBtn{
-    width: 24rem;
-    flex-wrap: nowrap;
-    align-self: center;
-  }
-  .goToTestamonials{
-    display: none;
-  }
-  .learnMoreLinks{
-    width:24rem;
-    align-self: center;
-  }
-  .modalStyling{
-    /* position:absolute;
-    top: 40px;
-    left: 40px;
-    right: 40px;*/
-    bottom: 40px;
-    max-width: 50vw;
-    margin: 0 auto;
-    margin-top:3rem;
-    max-height: 80vh
-  }
-  .showTestamondials{
-    display: flex;
   }
   .testimonial{
     width: 20rem;
