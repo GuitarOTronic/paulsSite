@@ -14,8 +14,9 @@ class Policies extends Component {
       <div className='policiesContainer'>
         <h1>Policies</h1>
         <div className='policyContent'>
-          <a href='file://pauls_site/public/policies.pdf' download>Download</a>
-          {/* <a href='https://drive.google.com/open?id=131lNq7hB84C8hv_OV6rgPNN-cVIruQAZ' download>Download</a> */}
+          {/* <a href='file://pauls_site/public/policies.pdf' download>Download</a> */}
+
+          <a href='https://s3-us-west-1.amazonaws.com/witkamppolicy/policies.pdf' download>Download</a>
 
           {/* <embed src='https://drive.google.com/open?id=131lNq7hB84C8hv_OV6rgPNN-cVIruQAZ' width="500" height="375" ></embed> */}
           {/* <embed width="100%" height="100%" src="../../assets/policies.pdf" type="application/pdf"></embed> */}
