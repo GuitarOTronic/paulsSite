@@ -123,6 +123,19 @@ footer a{
   margin:0;
 }
 
+.modalStyling{
+  position:absolute;
+  top: 4px;
+  left: 4px;
+  right: 4px;
+  bottom: 4px;
+  border: 1px solid rgb(204, 204, 204);
+  background-color: rgb(255, 255, 255);
+  overflow: auto;
+  border-radius: 4px;
+  outline: none;
+}
+
 .showTestamondials{
   display: none;
 }
