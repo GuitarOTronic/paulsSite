@@ -17,6 +17,20 @@
 
   /* color:#2d2d2d; */
 }
+.neighborhoodContainer{
+  background:rgba(169,169,169, 0.4);
+  display: flex;
+  color: #fff;
+  align-items: center;
+  flex-direction: column;
+  margin: 1rem;
+  padding: 1.5rem;
+
+}
+
+.neighborhoodContainer li{
+  line-height: 1.3rem;
+}
 .policiesContainer{
 
   display: flex;
@@ -49,7 +63,7 @@
 
 .pricingContainer{
   margin: 1rem;
-
+  padding: 1.5rem;
   color:#fff;
   background:rgba(169,169,169, 0.4);
   /* max-width: 365px; */
@@ -68,6 +82,18 @@
     padding:.6rem;
     padding-bottom: 0;
   }
+  .groupLessons{
+    padding:1rem;
+    padding-right: 0;
+  }
+  .groupLessons p{
+    width:40vw;
+
+  }
+  .neighborhoodContainer{
+    margin: 1rem;
+    padding: 1.5rem;
+  }
 }
 @media (min-width:768px){
 
@@ -77,6 +103,20 @@
   .downloadPolicy p{
     padding-left: 0;
   }
+  .groupLessons p{
+    width: auto;
+  }
+  .homeLocation{
+    display: flex;
+    align-items: baseline;
+  }
+  .homeLocation p{
+    margin: 1rem;
+  }
+  .neighborhoodContainer{
+    width:60vw;
+
+  }
   .policyContent{
     width:60vw;
   }
@@ -84,4 +124,6 @@
     width:60vw;
     padding:1.5rem;
   }
+
+
 }
