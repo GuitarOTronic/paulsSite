@@ -26,6 +26,7 @@ button:hover {
   display: block;
 }
 .mainContainer{
+  min-height: 100vh;
   background-image: url('./pics/bgPattern.png');
   background-size: cover;
   background-repeat: no-repeat;

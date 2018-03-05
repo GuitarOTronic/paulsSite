@@ -4,10 +4,10 @@ import Testimonial from './../home/testimonial.js'
 import '../../css/home.css'
 import testimonialDB from '../../assets/testimonialDB.js'
 // import PaulsHeadshot from '../../pics/PaulHeadshotCropped.jpg'
-import downArrow from '../../pics/arrow-down.png'
+
 import kidsPic from '../../pics/kidsGroup.JPG'
 import Modal from 'react-modal'
-import upArrow from '../../pics/arrow-up.png'
+
 
 
 class Home extends Component{
@@ -103,7 +103,9 @@ class Home extends Component{
             <img src={ downArrow } alt='down arrow' className='downArrow'></img>
           </div></a> */}
         </div>
-
+        <div className='centerDiv centerText'>
+          <h2>Testimonials</h2>
+        </div>
         <div className='divider'>
           <div id='testimonials' className='testimonialPicContainer'>
             <img src={ kidsPic } alt='Guitar class' className='testimonialPic'></img>
@@ -111,9 +113,7 @@ class Home extends Component{
           </div>
         </div>
 
-        <div className='centerDiv centerText'>
-          <h2>Testimonials</h2>
-        </div>
+
         <div className='testimonialContainer'>
           { testimonialDB.map((testimonial, i) =>
             <Testimonial

@@ -44,7 +44,7 @@ class Banner extends Component{
               <hr></hr>
               <Link to='about'><li> About </li></Link>
               <hr></hr>
-              <Link to='policies'><li> Policies </li></Link>
+              <Link to='policies'><li> Policies & Pricing </li></Link>
               <hr></hr>
               <Link to='music'><li> Music </li></Link>
             </ul>

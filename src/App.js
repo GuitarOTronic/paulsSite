@@ -8,7 +8,7 @@ import Policies from './components/policies/policies.js'
 import './App.css';
 import axios from 'axios'
 
-const host = process.env.REACT_APP_HOST
+// const host = process.env.REACT_APP_HOST
 class App extends Component {
   constructor(props){
     super(props)
