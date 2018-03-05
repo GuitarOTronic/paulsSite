@@ -14,6 +14,9 @@
 button:hover {
   cursor: pointer;
 }
+.block{
+  display: block;
+}
 .centerText{
   margin: 0 auto;
 
@@ -22,8 +25,12 @@ button:hover {
   display: flex;
   justify-content:  center;
 }
-.block{
-  display: block;
+
+.flex{
+  display:flex;
+}
+.spaceBetween{
+  justify-content: space-between;
 }
 .mainContainer{
   min-height: 100vh;
@@ -31,4 +38,8 @@ button:hover {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+}
+
+.pad{
+  padding:1rem;
 }

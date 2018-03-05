@@ -44,7 +44,7 @@ class Banner extends Component{
               <hr></hr>
               <Link to='about'><li> About </li></Link>
               <hr></hr>
-              <Link to='policies'><li> Policies & Pricing </li></Link>
+              <Link to='policies'><li> Info </li></Link>
               <hr></hr>
               <Link to='music'><li> Music </li></Link>
             </ul>
@@ -60,7 +60,7 @@ class Banner extends Component{
               <Link to='policies' onClick={ this.toggleMenu }><li> Policies </li></Link>
               <hr></hr>
               <Link to='music' onClick={ this.toggleMenu }><li> Music </li></Link>
-              <hr></hr>
+
             </ul>
 
           </div>

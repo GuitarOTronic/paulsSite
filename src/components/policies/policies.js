@@ -23,9 +23,46 @@ class Policies extends Component {
   render(){
     return(
       <div className='policiesContainer'>
+        <div className='pricingContainer'>
+          <h1>Pricing</h1>
+          <div className='flex pad spaceBetween'>
+            <h4>Home-Studio Private:</h4>
+          	<p>
+              60 minute: $40<br></br>
+          		45 minute: $35<br></br>
+          		30 minute: $30<br></br>
+            </p>
+
+          </div>
+
+          <div className='flex pad spaceBetween'>
+            <h4>In-Home Private:</h4>
+            <p>
+              60 minute: $55<br></br>
+          		45 minute: $50<br></br>
+          		30 minute: $45<br></br>
+            </p>
+          </div>
+
+
+          <div className='flex pad spaceBetween'>
+            <h4>Online Private:</h4>
+            <p>
+              60 minute: $35<br></br>
+              45 minute: $30<br></br>
+              30 minute: $25<br></br>
+            </p>
+          </div>
+          <div className='flex pad spaceBetween'>
+            <h4>Group lessons: </h4>
+            <p>5% discount for each student. Maximum group size: 5</p>
+          </div>
+
+
+        </div>
         <div className='downloadPolicy'>
-          <p>Please download, print, and sign the Lesson Policy Agreement and bring to your first lesson.</p>
-          <button className='downloadBtn'><a href='https://s3-us-west-1.amazonaws.com/witkamppolicy/policies.pdf' download>Download Lesson Agreement Policy</a></button>
+          <p>Please download, print, and sign the Lesson Policy Agreement and bring it to your first lesson.</p>
+          <button className='downloadBtn'><a href='https://s3-us-west-1.amazonaws.com/witkamppolicy/policies.pdf' download>Download <i>Lesson Agreement Policy</i></a></button>
         </div>
         {/* <div className='centerDiv'>
           <button onClick={ this.showPolicies }>View Policies</button>

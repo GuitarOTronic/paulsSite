@@ -19,7 +19,7 @@
 }
 .policiesContainer{
 
-  /* display: flex; */
+  display: flex;
   justify-content: center;
   flex-wrap: wrap;
   margin: 0 auto;
@@ -36,6 +36,7 @@
   flex-direction: column;
   justify-content: center;
   background: grey;
+  background:rgba(169,169,169, 0.4);
   color:#fff;
   line-height: 1.3rem;
 }
@@ -44,6 +45,19 @@
 }
 .policyContent h1{
   line-height: normal;
+}
+
+.pricingContainer{
+  margin: 1rem;
+
+  color:#fff;
+  background:rgba(169,169,169, 0.4);
+  /* max-width: 365px; */
+}
+
+.pricingContainer h1{
+  margin: 0;
+  margin-top: 1rem;
 }
 @media (min-width:320px) {
   .downloadBtn{
@@ -56,7 +70,18 @@
   }
 }
 @media (min-width:768px){
+
+  .downloadBtn{
+    width: 30vw;
+  }
+  .downloadPolicy p{
+    padding-left: 0;
+  }
   .policyContent{
     width:60vw;
+  }
+  .pricingContainer{
+    width:60vw;
+    padding:1.5rem;
   }
 }
