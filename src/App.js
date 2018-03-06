@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom'
 import About from './components//about/about.js'
 import Banner from './components/banner.js'
 import Home from './components/home/home.js'
+import Footer from './components/footer.js'
 import Music from './components/music/music.js'
 import Policies from './components/policies/policies.js'
 import './App.css';
@@ -59,7 +60,7 @@ class App extends Component {
         <Route path='/music'
           component={ Music }
         />
-
+        <Footer/>
       </div>
     </Router>
 

@@ -1,0 +1,32 @@
+
+.footer{
+  height: 60px;
+  min-width: 100vw;
+}
+.footerNav{
+  /* position: absolute;
+  bottom: 0; */
+  height: 100px;
+  min-width: 100vw;
+  background: grey;
+  /* align-self: center; */
+  /* text-align: center; */
+  /* flex-direction: row; */
+  display: flex;
+
+}
+.footerNav ul{
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: center;
+}
+.footerNav a{
+  padding:1rem;
+}
+
+@media(min-width:768px){
+  .footerNav{
+    width: 40%;
+  }
+}

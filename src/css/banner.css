@@ -14,6 +14,7 @@ a:active{
 
 .hamMenuContainer{
   background-color: grey;
+
 }
 
 .hamMenuContainer li {
@@ -45,6 +46,7 @@ li:hover {
 
 .home-header {
   background-color: grey;
+  /* background-color: #c7bc2cb8; */
   height: 60px;
   color: white;
   display: flex;
@@ -70,12 +72,6 @@ hr {
   .phoneTitle{
     display: block;
   }
-  /* .phoneTitle h1 {
-    font-size: .5em;
-    color:red;
-    font-size: 1.5em;
-    text-align: left;
-  } */
   .tabletTitle{
     display: none;
   }
@@ -98,10 +94,10 @@ hr {
     justify-content: space-between;
     padding: 0 2rem;
   }
-  hr {
+  /* hr {
      height: 1rem;
     color: black;
-  }
+  } */
   .home-header{
     display: flex;
     justify-content: space-between;

@@ -17,14 +17,20 @@
 
   /* color:#2d2d2d; */
 }
+
+.lineDivider{
+  width: 100%;
+
+}
 .neighborhoodContainer{
-  background:rgba(169,169,169, 0.4);
+  background:rgba(169,169,169, 0.2);
   display: flex;
   color: #fff;
   align-items: center;
   flex-direction: column;
   margin: 1rem;
   padding: 1.5rem;
+  padding-top: 0;
 
 }
 
@@ -38,25 +44,20 @@
   list-style: none;
 }
 .policiesContainer{
-
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   margin: 0 auto;
-  /* background-image: url('../pics/bgPattern.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed; */
 }
 
 .policyContent{
   margin: 1rem;
   padding: 1.5rem;
-  /* display: flex; */
+  padding-top: 0;
   flex-direction: column;
   justify-content: center;
   background: grey;
-  background:rgba(169,169,169, 0.4);
+  background:rgba(169,169,169, 0.2);
   color:#fff;
   line-height: 1.3rem;
 }
@@ -70,15 +71,18 @@
 .pricingContainer{
   margin: 1rem;
   padding: 1.5rem;
+  padding-top: 0;
   color:#fff;
-  background:rgba(169,169,169, 0.4);
+  background:rgba(169,169,169, 0.2);
   /* max-width: 365px; */
+
 }
 
 .pricingContainer h1{
   margin: 0;
   margin-top: 1rem;
 }
+
 @media (min-width:320px) {
   .downloadBtn{
     width: 100%;
@@ -89,8 +93,8 @@
     padding-bottom: 0;
   }
   .groupLessons{
-    padding:1rem;
-    padding-right: 0;
+    /* padding:1rem; */
+    /* padding-right: 0; */
   }
   .groupLessons p{
     width:40vw;
@@ -98,11 +102,14 @@
   }
   .mapContainer{
     width:300px;
-     height:400px;
+    height:400px;
   }
   .neighborhoodContainer{
     margin: 1rem;
-    padding: 1.5rem;
+    /* padding: 1.5rem 0; */
+  }
+  .neighborhoodLocation{
+    padding: .5rem;
   }
 }
 @media (min-width:768px){
@@ -118,6 +125,8 @@
   }
   .groupLessons p{
     width: auto;
+    display: flex;
+    align-self: center;
   }
   .homeLocation{
     display: flex;
@@ -127,7 +136,7 @@
     margin: 1rem;
   }
   .mapContainer{
-    width:607px;
+    width:90%;
      height:480px;
   }
   .neighborhoodContainer{
@@ -140,7 +149,12 @@
   .pricingContainer{
     width:60vw;
     padding:1.5rem;
+    padding-top: 0;
   }
+}
 
-
+@media(min-width:1080px){
+  .pricingContainer div{
+    justify-content:space-around;
+  }
 }

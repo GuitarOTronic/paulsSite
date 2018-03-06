@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import '../../css/policies.css'
-import { Collapse } from 'react-collapse';
+
 
 
 class Policies extends Component {
@@ -25,18 +25,17 @@ class Policies extends Component {
       <div className='policiesContainer'>
         <div className='pricingContainer'>
           <h1>Pricing</h1>
-          <div className='flex pad spaceBetween'>
-            <h4>Home-Studio Private:</h4>
+          <div className='flex spaceBetween'>
+            <h4>Home-Studio:</h4>
           	<p>
               60 minute: $40<br></br>
           		45 minute: $35<br></br>
           		30 minute: $30<br></br>
             </p>
-
           </div>
 
-          <div className='flex pad spaceBetween'>
-            <h4>In-Home Private:</h4>
+          <div className='flex spaceBetween'>
+            <h4>In-Home:</h4>
             <p>
               60 minute: $55<br></br>
           		45 minute: $50<br></br>
@@ -44,9 +43,8 @@ class Policies extends Component {
             </p>
           </div>
 
-
-          <div className='flex pad spaceBetween'>
-            <h4>Online Private:</h4>
+          <div className='flex spaceBetween'>
+            <h4>Online:</h4>
             <p>
               60 minute: $35<br></br>
               45 minute: $30<br></br>
@@ -60,8 +58,9 @@ class Policies extends Component {
         </div>
         <div className='neighborhoodContainer'>
           <h1> Chicago Neighborhoods Served</h1>
-          <iframe className='mapContainer' src="https://www.google.com/maps/d/u/1/embed?mid=1NcjNJiryPZVdoq6SK-FsG1qofJf2kRQS" ></iframe>
-          <div className='flex'>
+          <iframe className='mapContainer' src="https://www.google.com/maps/d/u/1/embed?mid=1NcjNJiryPZVdoq6SK-FsG1qofJf2kRQS"></iframe>
+          {/* <iframe className='mapContainer' src="https://www.google.com/maps/d/u/1/embed?mid=1NcjNJiryPZVdoq6SK-FsG1qofJf2kRQS" ></iframe> */}
+          <div className='flex neighborhoodLocation'>
             <ul>
               <li>Logan Square</li>
               <li>Palmer Square</li>
@@ -91,8 +90,8 @@ class Policies extends Component {
 
             </ul>
           </div>
-
-          <div className='homeLocation'>
+          <hr className='lineDivider'></hr>
+          <div className='homeLocation neighborhoodLocation'>
             <h3>Home Studio Location: </h3>
             <p>Intersection of N Albany Ave & W Wellington Ave</p>
           </div>
@@ -127,7 +126,6 @@ class Policies extends Component {
           <br></br><br></br>Cancellation by teacher: If I cancel a lesson on the scheduled day, for any reason, a reschedule will be attempted. If we cannot agree upon a date/time, the lesson will be credited to the next month.
           </p>
         </div>
-      {/* </Collapse> */}
 
       </div>
     )

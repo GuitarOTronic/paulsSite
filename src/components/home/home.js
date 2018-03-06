@@ -60,16 +60,16 @@ class Home extends Component{
             </div>
             <form onSubmit={this.submitBecomeStudentForm}>
               <label htmlFor='name'>Name:{" "}
-                <input id='name' type='text'/>
+                <input required id='name' type='text'/>
               </label>
               <label htmlFor='email'>Email:{" "}
-                <input id='email' type='email'/>
+                <input required id='email' type='email'/>
               </label>
               <label htmlFor='phone'>Phone:{" "}
-                <input id='phone' type='phone'/>
+                <input required id='phone' type='phone'/>
               </label>
               <label htmlFor='message'>Message:{" "}<br></br>
-                <textarea id='message' type='textarea' rows="10" cols="30" placeholder='Any questions for Paul? Whats your favorite type of music? '/>
+                <textarea required id='message' type='textarea' rows="10" cols="30" placeholder='Any questions for Paul? Whats your favorite type of music? '/>
               </label>
               <div className='formBtnContainer'>
                 <button type='submit' className='formBtnSubmit'>Submit</button>
