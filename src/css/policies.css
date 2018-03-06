@@ -111,6 +111,9 @@
   .neighborhoodLocation li{
     padding: .5rem ;
   }
+  .neighborhoodLocation{
+    text-align: center;
+  }
 }
 @media (min-width:768px){
 
@@ -151,6 +154,7 @@
     padding:1.5rem;
     padding-top: 0;
   }
+
 }
 
 @media(min-width:1080px){

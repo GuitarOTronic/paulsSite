@@ -106,18 +106,33 @@ class Home extends Component{
 
         </div>
         <div className='divider '>
-          <h3 className='centerDiv' style={{'color':'#fff'}}>Student Performing Piece</h3>
+          <h3 className='centerDiv'>Student Performing Piece</h3>
         </div>
 
         <div className='studentSongContainer'>
             <ReactPlayer  width=' 320px' height='150px'  url='https://www.youtube.com/watch?v=h9TlaYxoOO8' playing={false} controls={true} config={{youtube:{playerVars:{showinfo:1}}}}/>
         </div>
         <div id='testimonials' className='testimonialPicContainer divider'>
-          <h2>See what students are saying about Paul </h2>
+          <h3 className='centerDiv'>See what students are saying about Paul </h3>
         </div>
+        <div className='homeTestimonialContainer'>
+          <div className='homeTestimonial'>
+            <h3>"Paul is a phenomenal instructor with the personality and charisma it takes to teach such a distinguished instrument." -Kyle </h3>
 
+          </div>
+          <div className='homeTestimonial'>
+            <h3>"Mr. Witkamp gave me private lessons for two years and it was one of the best investments I've made." -Nate</h3>
 
+          </div>
+          <div className='homeTestimonial'>
+            <h3>"Paul is a fantastic guitarist and an even better teacher." -Lauren</h3>
 
+          </div>
+          <div className='homeTestimonial'>
+            <h3>"He has been very organized, punctual, and inspiring instructor." -Suliko T.</h3>
+
+          </div>
+        </div>
         {/* <div className='testimonialContainer'>
           { testimonialDB.map((testimonial, i) =>
             <Testimonial
@@ -129,7 +144,6 @@ class Home extends Component{
               hasGreyBackground={ i }
             />) }
         </div> */}
-
       </div>
     )
   }
