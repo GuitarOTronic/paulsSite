@@ -16,7 +16,7 @@ class Footer extends Component{
             <Link to='policies'><li> Info </li></Link>
             <Link to='music'><li> Media </li></Link>
           </ul> */}
-          <p><b>Witkamp Guitar Lessons</b> • (555)555-5555 • </p>
+          <p><b>Witkamp Guitar Lessons</b> • (555)555-5555 </p>
           <h6>© 2018</h6>
         </div>
       </footer>

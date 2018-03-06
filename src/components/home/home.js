@@ -118,32 +118,18 @@ class Home extends Component{
         <div className='homeTestimonialContainer'>
           <div className='homeTestimonial'>
             <h3>"Paul is a phenomenal instructor with the personality and charisma it takes to teach such a distinguished instrument." -Kyle </h3>
-
           </div>
           <div className='homeTestimonial'>
             <h3>"Mr. Witkamp gave me private lessons for two years and it was one of the best investments I've made." -Nate</h3>
-
           </div>
           <div className='homeTestimonial'>
             <h3>"Paul is a fantastic guitarist and an even better teacher." -Lauren</h3>
-
           </div>
           <div className='homeTestimonial'>
             <h3>"He has been very organized, punctual, and inspiring instructor." -Suliko T.</h3>
-
           </div>
+          <Link style={{'color':'#fff','textDecoration': 'underline', 'fontSize':'1.2rem'}} to='testimonials'><em>See more testimonials...</em></Link>
         </div>
-        {/* <div className='testimonialContainer'>
-          { testimonialDB.map((testimonial, i) =>
-            <Testimonial
-              name= { testimonial.name }
-              date={ testimonial.date }
-              testimonial={ testimonial.testimonial}
-              title={testimonial.title}
-              key={ i }
-              hasGreyBackground={ i }
-            />) }
-        </div> */}
       </div>
     )
   }
