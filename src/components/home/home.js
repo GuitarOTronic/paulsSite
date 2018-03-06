@@ -105,7 +105,7 @@ class Home extends Component{
           </div>
 
         </div>
-        <div className='divider'>
+        <div className='divider '>
           <h3 className='centerDiv' style={{'color':'#fff'}}>Student Performing Piece</h3>
         </div>
 
