@@ -23,40 +23,6 @@ class Policies extends Component {
   render(){
     return(
       <div className='policiesContainer'>
-        <div className='neighborhoodContainer'>
-          <h1> Chicago Neighborhoods Served</h1>
-          <ul>
-            <li>Logan Square</li>
-            <li>Palmer Square</li>
-            <li>Avondale</li>
-            <li>Bucktown</li>
-            <li>Wicker Park</li>
-            <li>Roscoe Village</li>
-            <li>Lake View</li>
-            <li>Lathrop Homes</li>
-            <li>West De Paul</li>
-            <li>Wrightwood Neighbors</li>
-            <li>Lincoln Park</li>
-            <li>Park West</li>
-            <li>Lake View East</li>
-            <li>Sheffield Neighbors</li>
-            <li>Mid-North District</li>
-            <li>Noble Square</li>
-            <li>East Village</li>
-            <li>Near West Side	</li>
-            <li>West Town</li>
-            <li>Greektown</li>
-            <li>West Loop Gate</li>
-          </ul>
-          <div className='homeLocation'>
-            <h3>Home Studio Location: </h3>
-            <p>Intersection of N Albany Ave & W Wellington Ave</p>
-          </div>
-
-
-
-        </div>
-
         <div className='pricingContainer'>
           <h1>Pricing</h1>
           <div className='flex pad spaceBetween'>
@@ -92,7 +58,45 @@ class Policies extends Component {
             <p>5% discount for each student. Maximum group size: 5</p>
           </div>
         </div>
+        <div className='neighborhoodContainer'>
+          <h1> Chicago Neighborhoods Served</h1>
+          <iframe className='mapContainer' src="https://www.google.com/maps/d/u/1/embed?mid=1NcjNJiryPZVdoq6SK-FsG1qofJf2kRQS" ></iframe>
+          <div className='flex'>
+            <ul>
+              <li>Logan Square</li>
+              <li>Palmer Square</li>
+              <li>Avondale</li>
+              <li>Bucktown</li>
+              <li>Wicker Park</li>
+              <li>Roscoe Village</li>
+              <li>West Loop Gate</li>
+            </ul>
+            <ul>
+              <li>Lake View</li>
+              <li>Lathrop Homes</li>
+              <li>West De Paul</li>
+              <li>Wrightwood Neighbors</li>
+              <li>Lincoln Park</li>
+              <li>Park West</li>
+              <li>Lake View East</li>
+            </ul>
+            <ul>
+              <li>Sheffield Neighbors</li>
+              <li>Mid-North District</li>
+              <li>Noble Square</li>
+              <li>East Village</li>
+              <li>Near West Side	</li>
+              <li>West Town</li>
+              <li>Greektown</li>
 
+            </ul>
+          </div>
+
+          <div className='homeLocation'>
+            <h3>Home Studio Location: </h3>
+            <p>Intersection of N Albany Ave & W Wellington Ave</p>
+          </div>
+        </div>
         <div className='downloadPolicy'>
           <p>Please download, print, and sign the Lesson Policy Agreement and bring it to your first lesson.</p>
           <button className='downloadBtn'><a href='https://s3-us-west-1.amazonaws.com/witkamppolicy/policies.pdf' download>Download <i>Lesson Agreement Policy</i></a></button>

@@ -19,7 +19,7 @@ class Music extends Component{
     return(
       <div className='musicContainer'>
         <h1>Performances by Paul</h1>
-        <div className='song'>
+        <div className='songContainer'>
           {this.state.paulsPerformances.map((url, i)=><ReactPlayer width=' 320px' height='150px' className='song' key={ i } url={ url } playing={false} controls={true} config={{youtube:{playerVars:{showinfo:1}}}}/>) }
 
         </div>

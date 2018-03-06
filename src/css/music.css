@@ -2,13 +2,11 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* margin: 6rem; */
-  padding-bottom: 10rem;
 }
 
-.song{
+.songContainer{
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   justify-content: center;
   position: relative;
   padding: 1rem;
@@ -16,11 +14,26 @@
 
 }
 
-@media (min-width:320px){
-  /* .song{
-    width:200px;
-    height:150px;
-  } */
+@media(min-width:320px){
+  .songContainer{
+    padding: 0;
+    flex-direction: column;
+  }
+  .song{
+    padding: 1rem 0;
+  }
+}
+@media (min-width:768px){
+  .songContainer{
+    flex-direction: row;
+    display: flex;
+    width: 80vw;
+    flex-wrap: wrap;
+  }
+  .song{
+    padding:1rem;
+    display: flex;
+  }
 }
 
 /* width=' 200px' height='150px'  */

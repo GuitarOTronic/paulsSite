@@ -28,8 +28,14 @@
 
 }
 
+.neighborhoodContainer ul{
+  padding:0;
+
+}
+
 .neighborhoodContainer li{
   line-height: 1.3rem;
+  list-style: none;
 }
 .policiesContainer{
 
@@ -90,6 +96,10 @@
     width:40vw;
 
   }
+  .mapContainer{
+    width:300px;
+     height:400px;
+  }
   .neighborhoodContainer{
     margin: 1rem;
     padding: 1.5rem;
@@ -103,6 +113,9 @@
   .downloadPolicy p{
     padding-left: 0;
   }
+  .downloadPolicy{
+    align-items: center;
+  }
   .groupLessons p{
     width: auto;
   }
@@ -112,6 +125,10 @@
   }
   .homeLocation p{
     margin: 1rem;
+  }
+  .mapContainer{
+    width:607px;
+     height:480px;
   }
   .neighborhoodContainer{
     width:60vw;
