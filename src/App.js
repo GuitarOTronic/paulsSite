@@ -6,6 +6,8 @@ import Home from './components/home/home.js'
 import Footer from './components/footer.js'
 import Music from './components/music/music.js'
 import Policies from './components/policies/policies.js'
+import testimonialDB from './assets/testimonialDB.js'
+import Testimonials from './components/testimonials/testimonials.js'
 import './App.css';
 import axios from 'axios'
 
@@ -59,6 +61,9 @@ class App extends Component {
         />
         <Route path='/music'
           component={ Music }
+        />
+        <Route path='/testimonials'
+           component={ Testimonials }
         />
         <Footer/>
       </div>

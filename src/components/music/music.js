@@ -10,9 +10,17 @@ class Music extends Component{
         'https://youtu.be/jMUEf1ZYoF4',
         'https://youtu.be/rxZsuLNG_NA',
         'https://youtu.be/3_E6jiDnCWM',
+        'https://youtu.be/GKAyGI1zzVI',
+        'https://youtu.be/jMUEf1ZYoF4',
+        'https://youtu.be/rxZsuLNG_NA',
+        'https://youtu.be/3_E6jiDnCWM',
         'https://youtu.be/GKAyGI1zzVI'
       ],
     }
+  }
+
+  componentDidMount() {
+    window.scrollTo(0,0);
   }
 
   render(){
@@ -21,16 +29,7 @@ class Music extends Component{
         <h1>Performances by Paul</h1>
         <div className='songContainer'>
           {this.state.paulsPerformances.map((url, i)=><ReactPlayer width=' 320px' height='150px' className='song' key={ i } url={ url } playing={false} controls={true} config={{youtube:{playerVars:{showinfo:1}}}}/>) }
-
         </div>
-        {/* <div className='song'>
-            <ReactPlayer url='https://www.youtube.com/watch?v=h9TlaYxoOO8' playing={false} controls={true} config={{youtube:{playerVars:{showinfo:1}}}}/>
-        </div>
-        <div className='song'>
-            <ReactPlayer url='https://www.youtube.com/watch?v=h9TlaYxoOO8' playing={false} controls={true} config={{youtube:{playerVars:{showinfo:1}}}}/>
-        </div> */}
-
-
       </div>
     )
   }

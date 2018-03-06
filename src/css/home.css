@@ -64,13 +64,16 @@
 }
 
 .divider{
-  height: 19rem;
-  /* background-color: rgba(192,192,192,0.3); */
+
+  background-color: rgba(192,192,192,0.3);
   display: block;
   justify-content: space-between;
   align-items: center;
 }
 
+.divider h3{
+  padding: 1rem;
+}
 .downArrow{
   height: 1.5rem;
   align-self: center;
@@ -138,10 +141,17 @@ footer a{
   outline: none;
 }
 
+
 .showTestamondials{
   display: none;
 }
+.studentSongContainer{
+  display: flex;
+  justify-content: center;
+  /* flex-direction:column; */
+  padding: 2rem 0;
 
+}
 .testimonial{
   color: #fff;
   padding: 1rem;
@@ -207,7 +217,6 @@ footer a{
     min-height: 100vh;
     min-height: 521px;
     padding: 1rem;
-    display: block;
   }
 
   .becomeStudentFormContainer input{
@@ -270,7 +279,7 @@ footer a{
     justify-content: center;
   }
   .testimonialPicContainer h2{
-    display: none;
+    /* display: none; */
   }
   .homeContainer .centerDiv h2 {
     text-decoration: underline;
@@ -361,4 +370,15 @@ footer a{
   .upArrow{
     display:flex;
   }
+}
+ .elevatorPitch p{
+  margin:0;
+  text-align: center;
+  max-width: 80vw;
+}
+
+#pitch {
+  font-size:1.3rem;
+  margin-bottom: 1.3rem;
+  margin-left: 1.3rem;
 }

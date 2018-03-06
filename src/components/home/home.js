@@ -3,7 +3,9 @@ import { Link } from 'react-router-dom'
 import Testimonial from './../home/testimonial.js'
 import '../../css/home.css'
 import testimonialDB from '../../assets/testimonialDB.js'
-// import PaulsHeadshot from '../../pics/PaulHeadshotCropped.jpg'
+import ReactPlayer from 'react-player'
+// import '../../css/music.css'
+
 
 import kidsPic from '../../pics/kidsGroup.JPG'
 import Modal from 'react-modal'
@@ -15,9 +17,13 @@ class Home extends Component{
     super(props)
     this.state={
       modalIsOpen:false,
+
     }
     Modal.setAppElement(document.body)
+  }
 
+  componentDidMount() {
+    window.scrollTo(0,0);
   }
 
   submitBecomeStudentForm = (event) => {
@@ -34,10 +40,6 @@ class Home extends Component{
 
   toggleModal =()=>{
     this.setState({modalIsOpen:!this.state.modalIsOpen})
-  }
-
-  showSignUp = () => {
-
   }
 
 
@@ -87,7 +89,10 @@ class Home extends Component{
           </div>
           <div className='elevatorPitch'>
             <h3>The one stop shop for great Guitar Lessons. </h3>
-            <p>I am a classically trained guitarist whose mission is to help my students reach their goals while inspiring a love and passion for music.<br></br><br></br> Never picked up a guitar before? No problem! You’ll be playing your favorite songs in no time. Been playing for years but need a little help overcoming that next hurdle? Great! You’ll be playing better and with more confidence than ever before. </p>
+            <div id='testimonials' className='testimonialPicContainer'>
+              <img src={ kidsPic } alt='Guitar class' className='testimonialPic'></img>
+            </div>
+            <p id='pitch'>Never picked up a guitar before? No problem! You’ll be playing your favorite songs in no time. Been playing for years but need a little help overcoming that next hurdle? Great! You’ll be playing better and with more confidence than ever before. </p>
           </div>
           <div className='buttonsContainer'>
             <button className='becomeStudentBtn' onClick={ this.toggleModal }> Become a Student! </button>
@@ -95,26 +100,25 @@ class Home extends Component{
               <Link to='policies'>Pricing & Policies</Link>
               <Link to='about'>About Paul </Link>
               <a href='#testimonials' className='showTestamondials'>Testamonials</a>
-              {/* <Link to='about'>About Paul </Link> */}
             </div>
 
           </div>
-          {/* <a href='#testimonials'><div className='goToTestamonials'>
-            <img src={ downArrow } alt='down arrow' className='downArrow'></img>
-          </div></a> */}
-        </div>
-        <div className='centerDiv centerText'>
-          <h2>Testimonials</h2>
+
         </div>
         <div className='divider'>
-          <div id='testimonials' className='testimonialPicContainer'>
-            <img src={ kidsPic } alt='Guitar class' className='testimonialPic'></img>
-            <h2>See what students are saying about Paul </h2>
-          </div>
+          <h3 className='centerDiv' style={{'color':'#fff'}}>Student Performing Piece</h3>
+        </div>
+
+        <div className='studentSongContainer'>
+            <ReactPlayer  width=' 320px' height='150px'  url='https://www.youtube.com/watch?v=h9TlaYxoOO8' playing={false} controls={true} config={{youtube:{playerVars:{showinfo:1}}}}/>
+        </div>
+        <div id='testimonials' className='testimonialPicContainer divider'>
+          <h2>See what students are saying about Paul </h2>
         </div>
 
 
-        <div className='testimonialContainer'>
+
+        {/* <div className='testimonialContainer'>
           { testimonialDB.map((testimonial, i) =>
             <Testimonial
               name= { testimonial.name }
@@ -124,13 +128,8 @@ class Home extends Component{
               key={ i }
               hasGreyBackground={ i }
             />) }
-        </div>
+        </div> */}
 
-
-
-        <footer>
-          {/* <a href="#home"><img src={ upArrow } alt='down arrow' className='upArrow ' ></img></a> */}
-      </footer>
       </div>
     )
   }

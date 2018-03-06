@@ -34,7 +34,7 @@ class Banner extends Component{
         <header className="home-header">
           <div>
             <Link to='/' ><h1 className="phoneTitle"> Paul Witkamp <br></br> Guitar Lessons</h1></Link>
-            <Link to='/' ><h1 className="App-title tabletTitle"> Paul Witkamp <br></br> Guitar Lessons</h1></Link>  
+            <Link to='/' ><h1 className="App-title tabletTitle"> Paul Witkamp <br></br> Guitar Lessons</h1></Link>
           </div>
 
           <div className='hamburgerContainer' onClick={ this.toggleMenu }>
@@ -45,6 +45,8 @@ class Banner extends Component{
               <Link to ='/' ><li> Home </li></Link>
               <hr></hr>
               <Link to='about'><li> About </li></Link>
+              <hr></hr>
+              <Link to='/testimonials'><li> Testimonials </li></Link>
               <hr></hr>
               <Link to='policies'><li> Info </li></Link>
               <hr></hr>
@@ -59,7 +61,9 @@ class Banner extends Component{
               <hr></hr>
               <Link to='about' onClick={ this.toggleMenu }><li> About </li></Link>
               <hr></hr>
-              <Link to='policies' onClick={ this.toggleMenu }><li> Policies </li></Link>
+              <Link to='testimonials' onClick={ this.toggleMenu }><li> Testimonials </li></Link>
+              <hr></hr>
+              <Link to='policies' onClick={ this.toggleMenu }><li> Info </li></Link>
               <hr></hr>
               <Link to='music' onClick={ this.toggleMenu }><li> Media </li></Link>
 
