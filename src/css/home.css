@@ -125,6 +125,7 @@ footer a{
   flex-direction: row;
   height: 110px;
   color: #fff;
+  padding-top: 1rem;
 }
 
 .homeTitle h1{
@@ -306,13 +307,13 @@ footer a{
   .testimonialPicContainer h2{
     /* display: none; */
   }
-  .homeContainer .
-  .centerDiv h2 {{
+  /* .homeContainer . */
+  .centerDiv h2 {
     text-align: center;
   }
-    text-decoration: underline;
+    /* text-decoration: underline;
     color: #fff;
-  }
+  } */
 }
 
 @media  (min-width:768px) {
