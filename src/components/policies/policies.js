@@ -59,7 +59,6 @@ class Policies extends Component {
         <div className='neighborhoodContainer'>
           <h1> Chicago Neighborhoods Served</h1>
           <iframe className='mapContainer' src="https://www.google.com/maps/d/u/1/embed?mid=1NcjNJiryPZVdoq6SK-FsG1qofJf2kRQS"></iframe>
-          {/* <iframe className='mapContainer' src="https://www.google.com/maps/d/u/1/embed?mid=1NcjNJiryPZVdoq6SK-FsG1qofJf2kRQS" ></iframe> */}
           <div className='flex neighborhoodLocation'>
             <ul>
               <li>Logan Square</li>

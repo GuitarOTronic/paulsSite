@@ -3,9 +3,6 @@ import testimonialDB from '../../assets/testimonialDB.js'
 import Testimonial from '../home/testimonial.js'
 
 class Testimonials extends Component {
-  constructor(props){
-    super(props)
-  }
   componentDidMount() {
     window.scrollTo(0,0);
   }

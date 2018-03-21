@@ -6,7 +6,6 @@
 
 .songContainer{
   display: flex;
-  /* flex-direction: column; */
   justify-content: center;
   position: relative;
   padding: 1rem;
@@ -35,5 +34,3 @@
     display: flex;
   }
 }
-
-/* width=' 200px' height='150px'  */

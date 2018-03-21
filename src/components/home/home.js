@@ -1,12 +1,7 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
-import Testimonial from './../home/testimonial.js'
 import '../../css/home.css'
-import testimonialDB from '../../assets/testimonialDB.js'
 import ReactPlayer from 'react-player'
-// import '../../css/music.css'
-
-
 import kidsPic from '../../pics/kidsGroup.JPG'
 import Modal from 'react-modal'
 
