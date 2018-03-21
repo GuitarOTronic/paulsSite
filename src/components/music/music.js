@@ -7,14 +7,20 @@ class Music extends Component{
     super(props)
     this.state={
       paulsPerformances:[
-        'https://youtu.be/jMUEf1ZYoF4',
-        'https://youtu.be/rxZsuLNG_NA',
-        'https://youtu.be/3_E6jiDnCWM',
-        'https://youtu.be/GKAyGI1zzVI',
-        'https://youtu.be/jMUEf1ZYoF4',
-        'https://youtu.be/rxZsuLNG_NA',
-        'https://youtu.be/3_E6jiDnCWM',
-        'https://youtu.be/GKAyGI1zzVI'
+        'https://www.youtube.com/watch?v=MuM1oUmE-fU',
+        'https://www.youtube.com/watch?v=JG0mbNSEeW4',
+        'https://www.youtube.com/watch?v=Ut6s1EySBak',
+        'https://www.youtube.com/watch?v=LLIYfYeCx7Y&t=3s',
+        'https://www.youtube.com/watch?v=vh3r4zktV8A',
+        'https://www.youtube.com/watch?v=v98D_K05fbU',
+        'https://www.youtube.com/watch?v=8PB6T_PDZAU',
+        'https://www.youtube.com/watch?v=kIwYGwL0lLU',
+        'https://www.youtube.com/watch?v=woMuzUiFnx4',
+        'https://www.youtube.com/watch?v=GKAyGI1zzVI',
+        'https://www.youtube.com/watch?v=3_E6jiDnCWM',
+        'https://www.youtube.com/watch?v=rxZsuLNG_NA',
+        'https://www.youtube.com/watch?v=jMUEf1ZYoF4',
+        'https://www.youtube.com/watch?v=fJlNhrFoSXU',
       ],
     }
   }

@@ -99,7 +99,7 @@ class Home extends Component{
             <div className='learnMoreLinks'>
               <Link to='policies'>Pricing & Policies</Link>
               <Link to='about'>About Paul </Link>
-              <a href='#testimonials' className='showTestamondials'>Testamonials</a>
+              <Link to='testimonials'> Testamonials</Link>
             </div>
 
           </div>
@@ -110,7 +110,7 @@ class Home extends Component{
         </div>
 
         <div className='studentSongContainer'>
-            <ReactPlayer  width=' 320px' height='150px'  url='https://www.youtube.com/watch?v=h9TlaYxoOO8' playing={false} controls={true} config={{youtube:{playerVars:{showinfo:1}}}}/>
+            <ReactPlayer  width=' 320px' height='150px'  url='https://www.youtube.com/watch?v=TiAc32y459o&t=20s' playing={false} controls={true} config={{youtube:{playerVars:{showinfo:1}}}}/>
         </div>
         <div id='testimonials' className='testimonialPicContainer divider'>
           <h3 className='centerDiv'>See what students are saying about Paul </h3>

@@ -98,7 +98,7 @@ class Policies extends Component {
         </div>
         <div className='downloadPolicy'>
           <p>Please download, print, and sign the Lesson Policy Agreement and bring it to your first lesson.</p>
-          <button className='downloadBtn'><a href='https://s3-us-west-1.amazonaws.com/witkamppolicy/policies.pdf' download>Download <i>Lesson Agreement Policy</i></a></button>
+          <button className='downloadBtn'><a href='https://s3.us-east-2.amazonaws.com/witkamp-policy/policies.pdf' download>Download <i>Lesson Agreement Policy</i></a></button>
         </div>
 
 
